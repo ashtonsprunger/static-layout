@@ -55,11 +55,39 @@ video {
     left: 230px;
     top: -620px;
     width: fit-content;
-
+    letter-spacing: 1px;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 58px;
+    font-size: 56px;
     padding: 20px;
     z-index: 1;
+}
+#arrow{
+    z-index: 30;
+    position: relative;
+    left: 230px;
+    top: -640px;
+}
+#learn-more{
+    color: white;
+    opacity: 100%;
+    background: #e33e42;
+    position: relative;
+    left: 230px;
+    top: -642px;
+    width: fit-content;
+    letter-spacing: 3px;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px 20px;
+    z-index: 1;
+    transition: background 300ms ease-in-out;
+}
+#learn-more:hover{
+    background: rgb(170, 40, 40);
+}
+#learn-text{
+    margin: 0;
+    padding: 0;
 }
 .navItem {
     position: relative;
@@ -287,8 +315,17 @@ li {
     display: flex;
     align-items: center;
 }
-.about li:hover, .employers li:hover, .veterans li:hover, .admissions li:hover{
+.about li:hover, .employers li:hover, .veterans li:hover{
     background: rgb(61, 61, 61);
+}
+.ya-hover:hover{
+    background: rgb(61, 61, 61);
+}
+#red-back{
+    background: #e33e42;
+}
+#red-back:hover{
+    background: #b33638;
 }
 .search{
     position: relative;
@@ -349,4 +386,104 @@ li {
 .sep{
     position: relative;
     top: 38px;
+}
+.information{
+    background: #efefef;
+    /* position: relative; */
+    padding: 80px 80px 30px 80px;
+    margin: 0;
+}
+#course-info{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 58px;
+    margin: 0;
+    padding: 0;
+    color: #4492b9;
+    letter-spacing: 3px;
+}
+.windows{
+    display: flex;
+    padding: 50px;
+    padding-top: 10px;
+    justify-content: center;
+    margin-top: 0;
+}
+.window{
+    background: rgb(255, 255, 255);
+    margin: 7px;
+    padding-top: 0;
+    position: relative;
+    width: 390px;
+    display: flex;
+    flex-direction: column;
+}
+.info-title{
+    margin-top: 0;
+    margin: 20px 38px 5px 38px;
+    font-size: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 2px;
+}
+p{
+    color: rgb(104, 104, 104);
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 18px 40px 40px 40px;
+    letter-spacing: 2px;
+    line-height: 30px;
+}
+.window div h2{
+    position: relative;
+    height: 50px;
+    margin: 0;
+}
+.sign-up{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #e33e42;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+.info-button{
+    margin-top: auto;
+}
+.info-click{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+    z-index: 1;
+    transition: background 200ms ease-in-out;
+}
+.info-click:hover{
+    background: rgba(0, 0, 0, 0.165);
+}
+.evolving{
+    display: flex;
+    justify-content: center;
+    padding: 100px;
+}
+#evolving-head{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 35px;
+    letter-spacing: 1px;
+    color: #4492b9;
+    margin-top: 0;
+}
+.evolving div{
+    width: 53%;
+
+    
+}
+.evolving p{
+    margin: 0;
+    letter-spacing: 1px;
+}
+.evolving img{
+    height: 230px;
+    margin-right: 50px;
 }
